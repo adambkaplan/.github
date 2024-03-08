@@ -20,8 +20,7 @@ jobs:
     - name: Create release branch
       env:
         RELEASE_VERSION: release-${{ inputs.release-version }}
-        RELEASE_REF: ${{ inputs.git-ref }}
       run: |
-        git branch "${RELEASE_VERSION}" "${RELEASE_REF}"
-        git switch "${RELEASE_VERSION}"
-        git push --set-upstream origin "${RELEASE_VERSION}"
+        git branch ${RELEASE_VERSION}
+        git switch ${RELEASE_VERSION}
+        git push --set-upstream origin ${RELEASE_VERSION}

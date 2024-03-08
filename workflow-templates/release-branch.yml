@@ -11,7 +11,7 @@ on:
       git-ref:
         required: false
         type: string
-        description: "Git ref to branch from (default: main)"
+        description: "Git ref to create the release branch from (defaults to main)"
         default: "main"
 jobs:
   create-release-branch:
