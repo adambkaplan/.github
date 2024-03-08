@@ -19,7 +19,7 @@ jobs:
         ref: ${{ inputs.git-ref }}
     - name: Create release branch
       env:
-        - RELEASE_VERSION: release-${{ inputs.release-version }}
+        RELEASE_VERSION: release-${{ inputs.release-version }}
       run: |
         git branch ${RELEASE_VERSION}
         git switch ${RELEASE_VERSION}

@@ -10,7 +10,6 @@ on:
         description: "Semantic version for the release branch (vX.Y format)"
 jobs:
   create-release-branch:
-    runs-on: ubuntu-latest
     permissions:
       contents: write
     uses: adambkaplan/.github/workflows/release-branch.yml@main
