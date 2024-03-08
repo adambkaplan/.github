@@ -12,6 +12,6 @@ jobs:
   create-release-branch:
     permissions:
       contents: write
-    uses: adambkaplan/.github/workflows/release-branch.yml@main
+    uses: adambkaplan/.github/.github/workflows/release-branch.yml@main
     with:
       release-version: ${{ inputs.release-version }}
