@@ -1,15 +1,15 @@
 # Proof of concept for shared release brancher workflow
 # See SHIP-0038: https://github.com/shipwright-io/community/pull/194
 name: Release Brancher
-  on:
-    workflow_call:
-      inputs:
-        release-version:
-          required: true
-          type: string
-        git-ref:
-          required: false
-          type: string
+on:
+  workflow_call:
+    inputs:
+      release-version:
+        required: true
+        type: string
+      git-ref:
+        required: false
+        type: string
 jobs:
   release-brancher:
     runs-on: ubuntu-latest
